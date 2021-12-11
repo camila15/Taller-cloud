@@ -6,6 +6,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Size;
 import java.util.Date;
 import java.util.List;
 
@@ -23,8 +24,7 @@ public class Project {
     @NotEmpty(message = "El campo projectName no puede estar vacio")
     private String projectName ;
 
-    @Min(value=5, message = "El campo porjectIdentifier debe tener minimo 5 carateres")
-    @Max(value=7, message = "El campo porjectIdentifier debe tener maximi 7 carateres")
+    @Size(min=5, max=7)
     @Column(unique = true, updatable = false)
     @NotEmpty(message = "El campo projectIdentifier no puede estar vacio")
     private String projectIdentifier ;

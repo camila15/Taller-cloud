@@ -17,7 +17,6 @@ import java.util.Date;
 public class ProjectTask {
 
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @NotEmpty(message = "El campo Id no puede estar vacio")
     @Id
     private Long id;
 
