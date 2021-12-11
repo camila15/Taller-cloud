@@ -1,14 +1,12 @@
 package com.example.Tallercloud.controler;
 
-import com.example.Tallercloud.domain.Project;
 import com.example.Tallercloud.domain.ProjectTask;
-import com.example.Tallercloud.service.ProjectService;
 import com.example.Tallercloud.service.ProjectTaskService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-
+@CrossOrigin(origins = "*")
 
 @Validated
 @RestController

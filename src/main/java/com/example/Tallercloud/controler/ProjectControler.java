@@ -4,8 +4,8 @@ import com.example.Tallercloud.domain.Project;
 import com.example.Tallercloud.service.ProjectService;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+@CrossOrigin(origins = "*")
 
 
 @Validated
